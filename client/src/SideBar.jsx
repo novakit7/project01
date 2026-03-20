@@ -1,4 +1,5 @@
 import './App.css'
+import { Link } from 'react-router-dom'
 
 export default function SideBar() {
   return (
@@ -11,7 +12,7 @@ export default function SideBar() {
     </div>
     <div className="s-menu">
       <ul>
-        <li><button className="s-home menubutton"><i className="fa-solid fa-house"></i> Home</button></li>
+        <li><Link to = '/'className="s-home menubutton"><i className="fa-solid fa-house"></i> Home</Link></li>
         {/* backlog button */}
         <li><button className="s-backlog menubutton"><i className="fa-solid fa-skull-crossbones"></i> Backlog</button></li>
         {/* pending button */}
