@@ -6,6 +6,7 @@
     backdrop-filter: blur(10px);
     padding: 15px;
     color: white;
+    display: inline-block;
 }
 
 /* Profile */
@@ -73,29 +74,8 @@
     bottom: 20px;
     width: 200px;
 }
-/* .f-box{
-    
-    padding-left: 5px;
-    padding-right: 5px;
-    
-    display: flex;
-    justify-content: space-between;
-    
-    
-}
-.f-container {
-    background-color: yellow;
-    height: 50px;
-}
-#back{
-    position: fixed;
-    left: 50vw;
-}
-.f-mid{
-    position: fixed;
-    left: 50vw;
-} */
 
+    /* Footer css */
 
 .footer {
   background-color: #1e1e2f;
@@ -140,4 +120,46 @@
   border-top: 1px solid #444;
   padding-top: 10px;
   font-size: 14px;
+}
+
+
+/* 
+    HOME PAGE CSS */
+    .h-main{
+    display: inline-block;
+    }
+    /* .h-backlog{
+   
+       width: 20vw;
+    min-height: 120px;
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+
+ background: linear-gradient(-90deg, #ff9ecf, #ff6fa5, #ff4f8b, #d63384);
+    } */
+     .h-backlog {
+    width: 20vw;
+    min-height: 120px;
+    padding: 15px;
+    border-radius: 16px;
+background: linear-gradient(
+  -90deg,
+  #7a5aa6 0%,
+  #a86ab0 20%,
+  #d96aa8 40%,
+  #ff6fa5 60%,
+  #ff5c94 80%,
+  #d63384 100%
+);
+   
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+    color: white;
 }
