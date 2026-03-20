@@ -7,6 +7,7 @@ import Profile from './components/Profile'
 import Navbar from './Navbar'
 import SideBar from './SideBar'
 import About from './components/About'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/' element = {<Home/>}/>
         <Route path='/profile' element = {<Profile/>}></Route>
       </Routes>
+      <Footer/>
     </>
   )
 }
