@@ -14,15 +14,57 @@ export default function Home() {
         <span className="h-backlogimage"></span>
           
       </div>
-      <div className="h-pending"></div>
-      <div className="h-complete"></div>
-      <div className="h-ongoing"></div>
+
+      {/* pending block */}
+      <div className="h-pending">
+           <p> PENDINGS </p>
+        <span className="h-pendingcounts">
+          <h3>05</h3>
+          <p>jan 13- march8</p>
+        </span>
+        <span className="h-pendingimage"></span>
+      </div>
+        {/* total task */}
+      <div className="h-totaltask">
+             <p> TOTAL TASKS </p>
+        <span className="h-totaltaskcounts">
+          <h3>05</h3>
+          <p>jan 13- march8</p>
+        </span>
+        <span className="h-totaltaskimage"></span>
+      </div>
+       {/* COMPLETED TASK BLOCK */}
+      <div className="h-completedtask">
+         <p> COMPLETED TASKS </p>
+        <span className="h-completedtaskcounts">
+          <h3>05</h3>
+          <p>jan 13- march8</p>
+        </span>
+        <span className="h-completedtaskimage"></span>
+      </div>
      </div>
       {/* middle of home */}
-      <div className="h-main">
-
-      </div>
+      <div className="h-middle">
+                   {/* profile sections */}
+             
+        <div className="h-profilename">
+          <h2> Mayank Kumar Tiwari</h2>
+          <div className="learnmore">
+            <h3> Learn More</h3>
+            <p> learning beyond fundamentals</p>
+          </div>
+        </div>
+        <div className="h-thoughts">
+          <p> Honesty is best policy</p>
+        </div>
+        </div>
+          
+      
       {/* end of home */}
     </div>
+
+
+
+
   )
 }

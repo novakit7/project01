@@ -1,12 +1,16 @@
 /* Sidebar base */
 .s-sidebar {
-    width: 230px;
+    width: 16vw;
+    margin: 0px;
     height: 93vh;
     background: rgba(15, 23, 42, 0.9); /* dark blue bg */
     backdrop-filter: blur(10px);
-    padding: 15px;
+     padding: 15px;
     color: white;
     display: inline-block;
+    position: absolute;
+
+    
 }
 
 /* Profile */
@@ -126,40 +130,150 @@
 /* 
     HOME PAGE CSS */
     .h-main{
+      
+      width: 100vw;
+      height: 100vh;
     display: inline-block;
+     background: linear-gradient(
+  45deg,
+  #140e27,
+#1a0f3f,#200e61,#1a0f3f, #13073e)
     }
-    /* .h-backlog{
-   
-       width: 20vw;
+             /* backlog block of home page */
+     .h-backlog {
+      position :absolute;
+      top:12vh;
+      left:17vw;
+    width: 18vw;
     min-height: 120px;
     padding: 15px;
-    border-radius: 12px;
+    border-radius: 16px;
+   background: linear-gradient(-90deg,#7a5aa6 0%, #a86ab0 20%, #d96aa8 40%, #ff6fa5 60%, #ff5c94 80%,#d63384 100%);
+   opacity: .8;
+   backdrop-filter: blur(12px);
+     -webkit-backdrop-filter: blur(12px);
+    border: 1px solid white;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     color: white;
+    
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.h-backlog:hover{
+  opacity: 1;
+  transform: translateX(6px);
+}
+.h-backlog:active{
+  transform: scale(.95);
+}
 
- background: linear-gradient(-90deg, #ff9ecf, #ff6fa5, #ff4f8b, #d63384);
-    } */
-     .h-backlog {
-    width: 20vw;
+/* pending */
+  .h-pending {
+      position :absolute;
+      top:12vh;
+      left:38vw;
+    width: 18vw;
     min-height: 120px;
     padding: 15px;
     border-radius: 16px;
 background: linear-gradient(
-  -90deg,
-  #7a5aa6 0%,
-  #a86ab0 20%,
-  #d96aa8 40%,
-  #ff6fa5 60%,
-  #ff5c94 80%,
-  #d63384 100%
+  180deg,
+  #3a1f5a, #46306d,#54407f, #625090, #6b508f
 );
-   
-
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-
-    border: 1px solid rgba(255, 255, 255, 0.2);
-
+   opacity: .8;
+   backdrop-filter: blur(12px);
+     -webkit-backdrop-filter: blur(12px);
+    border: 1px solid white;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-
     color: white;
+    
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.h-pending:hover{
+  opacity: 1;
+  transform: translateX(6px);
+}
+.h-pending:active{
+  transform: scale(.95);
+}
+ /* total task */
+ .h-totaltask {
+      position :absolute;
+      top:12vh;
+      left:59vw;
+    width: 18vw;
+    min-height: 120px;
+    padding: 15px;
+    border-radius: 16px;
+background: linear-gradient(90deg, #3a6fc2, #335fb4, #2b4fa6, #223f97, #192f88, #070176);
+   opacity: .8;
+   backdrop-filter: blur(12px);
+     -webkit-backdrop-filter: blur(12px);
+    border: 1px solid white;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    color: white;
+    
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.h-totaltask:hover{
+  opacity: 1;
+  transform: translateX(6px);
+}
+.h-totaltask:active{
+  transform: scale(.95);
+}
+/* completed task */
+.h-completedtask {
+      position :absolute;
+      top:12vh;
+      left:80vw;
+    width: 18vw;
+    min-height: 120px;
+    padding: 15px;
+    border-radius: 16px;
+    background: linear-gradient(0deg,#c8822d,#d3952c, #e0ac2c,#ecc42b, #f2dc2a);
+   opacity: .8;
+   backdrop-filter: blur(12px);
+     -webkit-backdrop-filter: blur(12px);
+    border: 1px solid white;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    color: white;
+    
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.h-completedtask:hover{
+  opacity: 1;
+  transform: translateX(6px);
+}
+.h-completedtask:active{
+  transform: scale(.95);
+}
+ /* main name and thoughts section */
+ .h-middle{
+  width:76vw ;
+  height: 63vh;
+background-color: #ff6fa5;
+ transform: translate(19vw,30vh);
+ display: grid;
+  grid-template-columns: repeat(5,1fr);
+
+ }
+ .h-profilename{
+  grid-column: 1/4;
+ background-image: url(./image.png);
+ background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+  }
+  
+.h-profilename h2{
+  color: white;
+  padding-top: 2vh;
+  opacity: .8;
+}
+.learnmore{
+
 }
