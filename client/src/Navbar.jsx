@@ -36,7 +36,7 @@ export default function Navbar() {
           {/* RIGHT LINKS */}
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 flex-lg-row flex-column gap-lg-3">
             <li className="nav-item">
-              <NavLink to="/about" className="nav-link text-light nav-hover"><i class="fa-solid fa-circle-info"></i>About Us</NavLink>
+              <NavLink to="/about" className="nav-link text-light nav-hover"><i className="fa-solid fa-circle-info"></i>About Us</NavLink>
               </li>
           </ul>
         </div>
