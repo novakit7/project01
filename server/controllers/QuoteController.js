@@ -7,7 +7,7 @@ const getQuote = async (req, res) => {
     if (!data) {
       return res.json({
         quote: "Stay consistent, success will follow.",
-        author: "Unknown"
+        author: "Ankit Verma"
       });
     }
 
