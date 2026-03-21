@@ -255,7 +255,7 @@ background: linear-gradient(90deg, #3a6fc2, #335fb4, #2b4fa6, #223f97, #192f88, 
  .h-middle{
   width:76vw ;
   height: 63vh;
-background-color: #ff6fa5;
+
  transform: translate(19vw,30vh);
  display: grid;
   grid-template-columns: repeat(5,1fr);
@@ -267,10 +267,48 @@ background-color: #ff6fa5;
  background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
+  transition: all 0.3s ease;
+   border: 2px solid white ;
+   border-radius: 10px;
+
   }
-  
-.h-profilename h2{
+  .nameing{
   color: white;
-  padding-top: 2vh;
+  padding-top: 4vh;
+  padding-left:2vw;
   opacity: .8;
+    transition: all 0.3s ease;
+
+}
+.h-profilename:hover .nameing {
+  opacity: 1;
+}
+.learnmore{
+  color: white;
+  opacity: .65;
+  position: absolute;
+  top: 50vh;
+  width:45vw;
+  left:.25vw;
+ 
+  backdrop-filter: blur(55px);
+  -webkit-backdrop-filter: blur(95px);
+  border: 1px solid white;
+  border-radius: 10px;
+}
+h3{
+  padding-left: 10px;
+}
+.learnmore p{
+  padding-left: 15px;
+}.h-profilename:hover .learnmore {
+  opacity: 1;
+ 
+}
+.h-profilename:hover{
+transform: translateX(6px);
+}
+.h-thoughts{
+  margin-left:3vw;
+  background-color: #e0ac2c;
 }

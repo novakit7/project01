@@ -48,7 +48,8 @@ export default function Home() {
                    {/* profile sections */}
              
         <div className="h-profilename">
-          <h2> Mayank Kumar Tiwari</h2>
+          <h2 className='nameing'>Hi Mayank! 👋</h2>
+          <p className='nameing'>Good to see you—how is your day going?</p>
           <div className="learnmore">
             <h3> Learn More</h3>
             <p> learning beyond fundamentals</p>

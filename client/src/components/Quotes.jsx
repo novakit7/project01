@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Api from '../assets/api';
-
+import "../App.css"
 export default function Quotes() {
 
   const [quote, setQuote] = useState("Get motivation");
