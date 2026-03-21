@@ -2,12 +2,14 @@ import './App.css'
 import { Link } from 'react-router-dom'
 
 export default function SideBar() {
+const user = JSON.parse(localStorage.getItem("user"));
+
   return (
     <div className="s-sidebar">
        {/* sidebar profile */}
     <div className="s-profile">
     <i className="fa-solid fa-child-reaching"></i>
-   <span className="s-name"> Mayank kumar tiwari</span>
+   <span className="s-name">{user.name}</span>
       
     </div>
     <div className="s-menu">
