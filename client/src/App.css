@@ -263,7 +263,7 @@ background-color: #ff6fa5;
  }
  .h-profilename{
   grid-column: 1/4;
- background-image: url(./image.png);
+ background-image: url("./image.png");
  background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -273,7 +273,4 @@ background-repeat: no-repeat;
   color: white;
   padding-top: 2vh;
   opacity: .8;
-}
-.learnmore{
-
 }
