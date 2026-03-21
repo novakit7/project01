@@ -24,7 +24,7 @@ export default function SideBar() {
         <li><button className=" s-add menubutton"><i className="fa-solid fa-plus"></i>Add Tasks</button></li>
       </ul>
     </div>
-    <div className="s-logout"><button className="s-logoutbutton menubutton"> <i className="fa-solid fa-power-off"></i>Log Out</button></div>
+    <div className="s-logout"><button className="s-logoutbutton menubutton logout"> <i className="fa-solid fa-power-off"></i>Log Out</button></div>
     </div>
   )
 }

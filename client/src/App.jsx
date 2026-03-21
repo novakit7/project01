@@ -24,7 +24,7 @@ function App() {
     <SideBar/>
       <Routes>
         <Route path='/login' element={<Login/>}/>
-        <Route path='/login' element={<Signup/>}/>
+        <Route path='/signup' element={<Signup/>}/>
 
         <Route path="/" element={<Intro/>}/>
         <Route path = "/quotes" element = {<Quotes/>}/>

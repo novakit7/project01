@@ -78,6 +78,10 @@
     bottom: 20px;
     width: 200px;
 }
+.logout{
+  position: relative;
+  bottom: 15vh;
+}
 
     /* Footer css */
 
@@ -273,6 +277,7 @@ background-repeat: no-repeat;
   transition: all 0.3s ease;
    border: 2px solid white ;
    border-radius: 10px;
+   height: 55vh;
 
   }
   .nameing{
@@ -290,9 +295,9 @@ background-repeat: no-repeat;
   color: white;
   opacity: .65;
   position: absolute;
-  top: 50vh;
-  width:45vw;
-  left:.25vw;
+  top: 40vh;
+  width:40vw;
+  left:2.8vw;
  
   backdrop-filter: blur(55px);
   -webkit-backdrop-filter: blur(95px);
