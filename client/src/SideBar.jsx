@@ -20,8 +20,8 @@ export default function SideBar() {
         {/* completed button */}
         <li> <Link to="/completed" className="s-completed menubutton"><i className="fa-solid fa-hand-back-fist"></i>completed</Link></li>
         {/* ongoing button */}
-        <li><button className=" s-ongoing menubutton"><i className="fa-solid fa-list-check"></i> Total Tasks</button></li>
-        <li><button className=" s-add menubutton"><i className="fa-solid fa-plus"></i>Add Tasks</button></li>
+        <li><Link to="/totalTask" className=" s-ongoing menubutton"><i className="fa-solid fa-list-check"></i> Total Tasks</Link></li>
+        <li><Link to="addTask"className=" s-add menubutton"><i className="fa-solid fa-plus"></i>Add Tasks</Link></li>
       </ul>
     </div>
     <div className="s-logout"><button className="s-logoutbutton menubutton logout"> <i className="fa-solid fa-power-off"></i>Log Out</button></div>

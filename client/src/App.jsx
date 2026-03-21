@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 import Intro from './components/Intro'
 import Pending from "./sideControls/Pendings"
 import Backlog from "./sideControls/Backlog"
-import Ongoing from "./sideControls/Ongoing"
+import TotalTask from "./sideControls/TotalTask"
 import Completed from "./sideControls/Completed"
 import Login from './Auth-Components/Login'
 import Signup from './Auth-Components/Signup'
@@ -34,7 +34,7 @@ function App() {
         <Route path='/home' element = {<Home/>}/>
         <Route path = "/completed" element = {<Completed/>}/>
         <Route path = "/backlog" element = {<Backlog/>}/>
-        <Route path = "/ongoing" element = {<Ongoing/>}/>
+        <Route path = "/totalTask" element = {<TotalTask/>}/>
       </Routes>
       <Footer/>
     </>

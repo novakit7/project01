@@ -1,10 +1,10 @@
 import React from 'react'
- import "./SideControl.css"
-export default function Pendings() {
+import "./SideControl.css"
+export default function TotalTask() {
   return (
-    <div className="backlogcontainer">
-      <div className="pending">
-        <h1>Pending Tasks</h1>
+        <div className="backlogcontainer">
+      <div className="total">
+        <h1>Total Tasks</h1>
         <div className="counts">5</div>
       </div>
       <div className="down"><h2> Tasks</h2>
