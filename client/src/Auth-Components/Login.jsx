@@ -1,32 +1,50 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Auth.css";
 import API from "../assets/api";
 
-
 export default function Login() {
+  const navigate = useNavigate();
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
 
+  //  auto redirect if already logged in
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) navigate("/");
+  }, []);
+
   const handleLogin = async (e) => {
     e.preventDefault();
+
+    if (!email || !password) {
+      return alert("Please fill all fields");
+    }
+
     setLoading(true);
 
     try {
       const { data } = await API.post("/auth/login", {
-        email,
-        password,
+        email: email.trim(),
+        password: password.trim(),
       });
 
       //  store token
       localStorage.setItem("token", data.token);
 
-      console.log("Login success:", data);
+      //  store user safely
+      if (data.user) {
+        localStorage.setItem("user", JSON.stringify(data.user));
+      }
 
-      // navigate("/dashboard");
+      // small delay (avoid race issues)
+      setTimeout(() => {
+        navigate("/home");
+      }, 50);
 
     } catch (err) {
-      console.error(err.response?.data?.message || err.message);
       alert(err.response?.data?.message || "Login failed");
     } finally {
       setLoading(false);
@@ -60,7 +78,13 @@ export default function Login() {
           </button>
 
           <p className="switch-text">
-            Don't have an account? <a href="#">Sign Up</a>
+            Don't have an account?{" "}
+            <span
+              style={{ color: "#8a2be2", cursor: "pointer" }}
+              onClick={() => navigate("/signup")}
+            >
+              Sign Up
+            </span>
           </p>
         </form>
       </div>

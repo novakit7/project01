@@ -8,12 +8,11 @@ const taskSchema = new mongoose.Schema({
   },
   title: String,
   description: String,
-  priority: {
-    type: String,
-    enum: ["Completed", "Pending", "Backlog"],
-    default: "Pending",
-  },
   dueDate: Date,
+  completed:{
+    type: Boolean,
+    default : false
+  }
 }, { timestamps: true });
 
 export default mongoose.model("Task", taskSchema);

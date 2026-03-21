@@ -12,7 +12,7 @@ console.log("type:", typeof protect);
 
 const router = express.Router();
 
-// router.use(protect);
+router.use(protect);
 
 router.route("/")
   .post(createTask)
