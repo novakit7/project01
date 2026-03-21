@@ -1,4 +1,90 @@
-.hello{
-    background-color: rgb(0, 0, 0);
-    display: block;
+
+.s-container{
+     background: linear-gradient(135deg, #0f172a, #1e3a8a, #1e40af);
+     height: 100vh;
+       display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+
+
+}
+
+.signup-box {
+  width: 350px;
+  padding: 25px;
+  
+  border-radius: 20px;
+
+  background: rgba(15, 23, 42, 0.6); /* dark blue glass */
+  backdrop-filter: blur(15px);
+ 
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+
+  text-align: center;
+  color: #e2e8f0;
+}
+
+/* Heading */
+.signup-box h2 {
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+.signup-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+
+  border-radius: 10px;
+  border: none;
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.signup-box input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Buttons */
+.signup-box button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+
+  transition: 0.3s;
+}
+
+.signup-box button:hover {
+  transform: scale(1.05);
+}
+
+/* OTP Button */
+.otp-btn {
+  background: linear-gradient(135deg, #334155, #1e293b);
+}
+
+/* Terms */
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 13px;
+  margin-top: 10px;
+  text-align: left;
+}
+.loginbox{
+    height: 55vh;
 }
