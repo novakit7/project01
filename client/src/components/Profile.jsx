@@ -1,9 +1,10 @@
-import React from 'react'
+import '../App.css'
 
 export default function Profile() {
-  return (
+
+  return(
     <div>
-      this is profile
+    this is profile
     </div>
   )
 }

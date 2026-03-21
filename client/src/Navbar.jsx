@@ -1,34 +1,50 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import logo from '../public/navIcon.png'
 
 export default function Navbar() {
   return (
-    <div>
-    <nav className="navbar navbar-expand-lg navbar-dark"style={{backgroundColor : "rgba(0, 15, 49, 0.9)"}}>
+    <nav 
+      className="navbar navbar-expand-lg navbar-dark"
+      style={{ backgroundColor: "rgba(0, 15, 49, 0.9)" }}
+    >
       <div className="container-fluid">
-        <Link to = '/' className="navbar-brand" href="#">Home</Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+
+        {/* LEFT LOGO */}
+        <NavLink to="/" className="navbar-brand">
+          <img src={logo} style={{ height: '50px' }} />
+        </NavLink>
+
+        {/* TOGGLE */}
+        <button 
+          className="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav"
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarText">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <div className="collapse navbar-collapse" id="navbarNav">
+
+          {/* CENTER MESSAGE */}
+          <span className="navbar-text mx-auto d-none d-lg-block">
+            To Do - Manage your day..
+          </span>
+          {/* RIGHT LINKS */}
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 flex-lg-row flex-column gap-lg-3">
             <li className="nav-item">
-              <Link className="nav-link active" to = '/about'>About<i className="fa-solid fa-house"></i></Link>
+              <NavLink to="/about" className="nav-link text-light nav-hover">About</NavLink>
             </li>
             <li className="nav-item">
-              <Link to='quotes'className="nav-link">Quotes</Link>
+              <NavLink to="/quotes" className="nav-link text-light nav-hover">Quotes</NavLink>
             </li>
             <li className="nav-item">
-              <Link to ='/profile'className="nav-link">Profile</Link>
+              <NavLink to="/profile" className="nav-link text-light nav-hover">Profile</NavLink>
             </li>
           </ul>
-          <span className="navbar-text">
-          To Do - Manage your day..
-          </span>
         </div>
       </div>
     </nav>
-      
-    </div>
   )
 }
