@@ -6,11 +6,13 @@ import {
   updateTask,
   deleteTask,
 } from "../controllers/taskController.js";
-import { protect } from "../middleware/authMiddleware.js";
+import protect from "../middleware/authMiddleware.js";
+console.log("protect:", protect);
+console.log("type:", typeof protect);
 
 const router = express.Router();
 
-router.use(protect);
+// router.use(protect);
 
 router.route("/")
   .post(createTask)
