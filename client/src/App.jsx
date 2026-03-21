@@ -12,6 +12,8 @@ import Pending from "./sideControls/Pendings"
 import Backlog from "./sideControls/Backlog"
 import Ongoing from "./sideControls/Ongoing"
 import Completed from "./sideControls/Completed"
+import Login from './Auth-Components/Login'
+import Signup from './Auth-Components/Signup'
 
 
 function App() {
@@ -21,6 +23,9 @@ function App() {
     <Navbar/>
     <SideBar/>
       <Routes>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/login' element={<Signup/>}/>
+
         <Route path="/" element={<Intro/>}/>
         <Route path = "/quotes" element = {<Quotes/>}/>
         <Route path='/about' element = {<About/>}/>

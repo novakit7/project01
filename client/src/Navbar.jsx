@@ -31,11 +31,13 @@ export default function Navbar() {
           <span className="navbar-text mx-auto d-none d-lg-block">
             To Do - Manage your day..
           </span>
+          <NavLink to="/login" className="nav-link text-light nav-hover">login</NavLink>
+          <NavLink to="/signup" className="nav-link text-light nav-hover">signup</NavLink>
           {/* RIGHT LINKS */}
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 flex-lg-row flex-column gap-lg-3">
             <li className="nav-item">
               <NavLink to="/about" className="nav-link text-light nav-hover"><i class="fa-solid fa-circle-info"></i>About Us</NavLink>
-            </li>
+              </li>
           </ul>
         </div>
       </div>
