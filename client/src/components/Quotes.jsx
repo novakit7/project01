@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import Api from '../assets/api';
-
+import "../App.css"
 export default function Quotes() {
 
-  const [quote, setQuote] = useState("Get motivation");
+  const [quote, setQuote] = useState("Now or Never");
 
   const getQuote = async () => {
     try {
@@ -15,11 +15,12 @@ export default function Quotes() {
     }
   }
 
-  return (
-    <div>
-      <h2>This is random quotes</h2>
-      <button onClick={getQuote}>Generate Thought</button>
-      <div>{quote}</div>
-    </div>
-  )
+ return (
+  <div className="quote-box">
+    <h2>⚡ Be Motivated</h2>
+     <div className="quote-text">{quote}</div>
+    <button onClick={getQuote}>Get Next</button>
+   
+  </div>
+)
 }

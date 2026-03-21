@@ -2,7 +2,7 @@
 .s-sidebar {
     width: 16vw;
     margin: 0px;
-    height: 93vh;
+    height: 100vh;
     background: rgba(15, 23, 42, 0.9); /* dark blue bg */
     backdrop-filter: blur(10px);
      padding: 15px;
@@ -86,6 +86,9 @@
   color: #fff;
   padding: 30px 20px;
   font-family: Arial, sans-serif;
+  position: absolute;
+  top:110vh;
+  width: 100vw;
 }
 
 .footer-container {
@@ -253,9 +256,9 @@ background: linear-gradient(90deg, #3a6fc2, #335fb4, #2b4fa6, #223f97, #192f88, 
 }
  /* main name and thoughts section */
  .h-middle{
-  width:76vw ;
+  width:90vw ;
   height: 63vh;
-background-color: #ff6fa5;
+
  transform: translate(19vw,30vh);
  display: grid;
   grid-template-columns: repeat(5,1fr);
@@ -267,10 +270,155 @@ background-color: #ff6fa5;
  background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
+  transition: all 0.3s ease;
+   border: 2px solid white ;
+   border-radius: 10px;
+
   }
-  
-.h-profilename h2{
+  .nameing{
   color: white;
-  padding-top: 2vh;
+  padding-top: 4vh;
+  padding-left:2vw;
   opacity: .8;
+    transition: all 0.3s ease;
+
+}
+.h-profilename:hover .nameing {
+  opacity: 1;
+}
+.learnmore{
+  color: white;
+  opacity: .65;
+  position: absolute;
+  top: 50vh;
+  width:45vw;
+  left:.25vw;
+ 
+  backdrop-filter: blur(55px);
+  -webkit-backdrop-filter: blur(95px);
+  border: 1px solid white;
+  border-radius: 10px;
+}
+h3{
+  padding-left: 10px;
+}
+.learnmore p{
+  padding-left: 15px;
+}.h-profilename:hover .learnmore {
+  opacity: 1;
+ 
+}
+.h-profilename:hover{
+transform: translateX(6px);
+}
+.h-thoughts{
+  margin-left:4vw;
+  color: white;
+ width: 25vw;
+ 
+ opacity: .8;
+  transition: all 0.3s ease;
+}
+.h-thoughts:hover{
+  opacity:1;
+  transform: translateX(6px);
+}
+
+/* quoute thoughts box */
+.quote-box {
+  width: 350px;
+  height: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  padding-top: 50px;
+
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+}
+
+.quote-box button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #ff6fa5, #ff4f8b);
+  color: white;
+}
+
+.quote-text {
+  margin-top: 10px;
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* this is about section */
+.a-box {
+  min-height: 100vh;
+  z-index: -1;
+  position:absolute;
+  top:10vh;
+  display: flex;
+  align-items: center;
+  margin-left: 32vh;
+  justify-content: center;
+  gap: 50px;
+  padding: 60px 80px;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+  flex-wrap: wrap;
+}
+
+.about {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: justify;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+}
+
+.about-img {
+  width: 520px;
+  height:500px;
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  object-fit: cover;
 }
