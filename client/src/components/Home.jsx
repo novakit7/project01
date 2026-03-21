@@ -1,4 +1,4 @@
-import React from 'react'
+import Quotes from './Quotes'
 import '../App.css'
 export default function Home() {
   return (
@@ -55,7 +55,7 @@ export default function Home() {
           </div>
         </div>
         <div className="h-thoughts">
-          <p> Honesty is best policy</p>
+          <Quotes/>
         </div>
         </div>
           

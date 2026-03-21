@@ -3,7 +3,6 @@ import './App.css'
 import { Routes, Route, Link } from 'react-router-dom'
 import Quotes from './components/Quotes'
 import Home from './components/Home'
-import Profile from './components/Profile'
 import Navbar from './Navbar'
 import SideBar from './SideBar'
 import About from './components/About'
@@ -25,7 +24,6 @@ function App() {
         <Route path="/" element={<Intro/>}/>
         <Route path = "/quotes" element = {<Quotes/>}/>
         <Route path='/about' element = {<About/>}/>
-        <Route path='/profile' element = {<Profile/>}></Route>
         {/* sidebar routes */}
         <Route path = "/pending" element = {<Pending/>}/>
         <Route path='/home' element = {<Home/>}/>
